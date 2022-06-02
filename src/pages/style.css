@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.galeria{
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 5px 0 black ;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+.tag{
+    list-style-type: none;
+    border: 2px solid black;
+    padding: 12px;
+    margin: 5px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.tag:hover{
+    background-color: rgb(148, 148, 148);
+}
