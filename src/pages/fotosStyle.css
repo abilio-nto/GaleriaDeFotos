@@ -4,18 +4,34 @@
 }
 .lista{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(9,1fr);
     max-width: 300px;
     margin: 10px;
 }
 .item{
     display: flex;
+    margin: 10px;
+    
+}
+
+.link{
+    border: 1px solid black;
+    padding: 15px;
 }
 
 .imagem{
+    
     width: 100px;
     height: 100px;
     margin: 5px;
+    transition: width 2s, height 2s, transform 2s;
+    
+}
+
+.imagem:hover{
+    
+    
+    transform: rotate(180deg);
 }
 
 .button{

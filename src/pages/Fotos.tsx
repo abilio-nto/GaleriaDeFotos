@@ -4,7 +4,7 @@ import { api } from "../api/api";
 import { Photos } from "../types/photos";
 import './fotosStyle.css'
 export const Fotos = () => {
-    const navigate = useNavigate()
+   
     const param = useParams();
     let id = param.id;
     useEffect(() => {
@@ -16,18 +16,15 @@ export const Fotos = () => {
         setPhotos(fotos)
     }
 
-    const handleVoltar = () =>{
-        navigate(-1)
-   }
 
     const [photos, setPhotos] = useState<Photos[]>([])
     return (
         <div>
-             <button onClick={handleVoltar} className="button">Voltar</button>
+           
             <ul className="lista">
                 {
                     photos.map((item, index) => {
-                        return <li className="item">
+                        return <li className="item" key={index}>
                             <Link to={`/photo/${item.id}`} className="link"><img src={item.url} className="imagem" /></Link>
                         </li>
                     })
